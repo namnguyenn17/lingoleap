@@ -11,7 +11,7 @@ import { Loader } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
 
-export default function MarketingPage() {
+export default function AuthPage() {
   return (
     <div className='max-w-[988px] mx-auto w-full flex flex-1 flex-col lg:flex-row items-center justify-center p-4 gap-8'>
       <div className='relative w-[240px] h-[240px] lg:w-[424px] lg:h-[424px] mb-8 lg:mb-0'>
@@ -32,21 +32,13 @@ export default function MarketingPage() {
 
           <ClerkLoaded>
             <SignedOut>
-              <SignUpButton
-                mode='modal'
-                signInFallbackRedirectUrl='/learn'
-                signInForceRedirectUrl='/learn'
-              >
+              <SignUpButton mode='modal'>
                 <Button size='lg' variant='secondary' className='w-full'>
                   Get Started
                 </Button>
               </SignUpButton>
 
-              <SignInButton
-                mode='modal'
-                signUpFallbackRedirectUrl='/learn'
-                signUpForceRedirectUrl='/learn'
-              >
+              <SignInButton mode='modal'>
                 <Button size='lg' variant='primaryOutline' className='w-full'>
                   I already have an account
                 </Button>

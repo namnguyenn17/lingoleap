@@ -1,12 +1,11 @@
-import { PropsWithChildren } from 'react';
-import { Header } from './header';
 import { Footer } from './footer';
+import { Header } from './header';
 
 type Props = {
   children: React.ReactNode;
 }
 
-export default function MarketingLayout({ children }: Props) {
+export default function AuthLayout({ children }: Props) {
   return (
     <div className='min-h-screen flex flex-col'>
       <Header />
