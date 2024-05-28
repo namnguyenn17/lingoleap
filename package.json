@@ -7,6 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
+    "format": "prettier --check --ignore-path .gitignore .",
+    "format:fix": "prettier --write --ignore-path .gitignore .",
     "db:studio": "npx drizzle-kit studio",
     "db:generate": "npx drizzle-kit generate",
     "db:push": "npx drizzle-kit push"
@@ -30,11 +32,15 @@
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
+    "autoprefixer": "^10.4.19",
     "drizzle-kit": "^0.21.2",
     "eslint": "^8",
     "eslint-config-next": "14.2.3",
+    "eslint-config-prettier": "^9.1.0",
     "pg": "^8.11.5",
     "postcss": "^8",
+    "prettier": "^3.2.5",
+    "prettier-plugin-tailwindcss": "^0.5.14",
     "tailwindcss": "^3.4.1",
     "typescript": "^5"
   }

@@ -1,7 +1,7 @@
-'use client';
+"use client";
 
-import { courses } from '@/db/schema';
-import { Card } from './card';
+import { courses } from "@/db/schema";
+import { Card } from "./card";
 
 type Props = {
   courses: (typeof courses.$inferSelect)[];

@@ -1,6 +1,6 @@
-import { clerkMiddleware, createRouteMatcher } from '@clerk/nextjs/server';
+import { clerkMiddleware, createRouteMatcher } from "@clerk/nextjs/server";
 
-const isProtectedRoute = createRouteMatcher(['/(.*)', '/learn']);
+const isProtectedRoute = createRouteMatcher(["/(.*)", "/learn"]);
 
 export default clerkMiddleware((auth, req) => {
   if (!isProtectedRoute(req)) {
@@ -11,5 +11,5 @@ export default clerkMiddleware((auth, req) => {
 export const config = {
   // The following matcher runs middleware on all routes
   // except static assets.
-  matcher: ['/((?!.*\\..*|_next).*)', '/', '/(api|trpc)(.*)'],
+  matcher: ["/((?!.*\\..*|_next).*)", "/", "/(api|trpc)(.*)"],
 };
